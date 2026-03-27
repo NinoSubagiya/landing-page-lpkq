@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daftar Kelas Offline Android</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+</head>
+<body>
+
+  <!-- ================================================
+       NAVBAR
+  ================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="brand" aria-label="TechRepairPro home">
+      <img src="assets/logo.svg" alt="TechRepairPro" class="brand-full-logo">
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#benefits">Benefit</a></li>
+      <li><a href="#curriculum">Kurikulum</a></li>
+      <li><a href="#pricing">Harga</a></li>
+      <li><a href="#testimonials">Testimoni</a></li>
+      <li><a href="#instructors">Instruktur</a></li>
+    </ul>
+
+    <a href="#pricing" class="btn btn-primary nav-cta">Daftar</a>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#benefits" class="mobile-nav-link">Benefits</a>
+    <a href="#benefits" class="mobile-nav-link">Benefits</a>
+    <a href="#curriculum" class="mobile-nav-link">Curriculum</a>
+    <a href="#pricing" class="mobile-nav-link">Pricing</a>
+    <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+    <a href="#benefits" class="mobile-nav-link">Benefits</a>
+    <a href="#pricing" class="btn btn-primary" style="text-align:center;margin-top:1rem;">Daftar</a>
+  </nav>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section id="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">🏆 Program Pelatihan Bersertifikat Industri</div>
+
+      <h1 class="hero-title" id="hero-title">
+        Kelas Offline <br><span class="accent">Android</span><br>
+      </h1>
+
+      <p class="hero-sub">
+       Menyelenggarakan pelatihan teknisi ponsel berbasis kompetensi dan praktik, menanamkan nilai amanah, jujur, dan profesional pada setiap lulusan, serta memberikan pendampingan berkelanjutan agar teknisi menjadi handal dan siap kerja.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn btn-primary btn-pulse">
+          ⚡ Enroll Now
+        </a>
+        <a href="#curriculum" class="btn btn-outline">
+          View Curriculum →
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="3000" id="counter-students">0</span>
+          <span class="stat-label">Peserta Mendaftar</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" id="counter-rating">0</span>
+          <span class="stat-label">Rating</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num" data-count="95" id="counter-jobs">0</span>
+          <span class="stat-label">Rasio Penempatan Kerja</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone visual -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone-wrap">
+        <div class="phone-glow"></div>
+        <div class="phone-orbit"></div>
+
+        <!-- HTML Phone Mockup with App Screens -->
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-notch">
+              <div class="phone-notch-cam"></div>
+            </div>
+            <div class="phone-screen">
+
+              <!-- Status Bar -->
+              <div class="phone-status-bar">
+                <span class="phone-status-time">9:41</span>
+                <div class="phone-status-icons">
+                  <svg viewBox="0 0 16 12" fill="none"><rect x="0" y="3" width="3" height="9" rx="1" fill="#60a5fa"/><rect x="4.5" y="2" width="3" height="10" rx="1" fill="#60a5fa"/><rect x="9" y="0" width="3" height="12" rx="1" fill="#60a5fa" opacity=".4"/><rect x="13.5" y="0" width="2.5" height="12" rx="1" fill="#60a5fa" opacity=".2"/></svg>
+                  <svg viewBox="0 0 16 12" fill="white"><path d="M8 2C5.5 2 3.3 3.1 1.8 4.8L0 3C2 1.1 4.9 0 8 0s6 1.1 8 3l-1.8 1.8C12.7 3.1 10.5 2 8 2z" fill="#60a5fa" opacity=".6"/><path d="M8 6c-1.4 0-2.6.6-3.5 1.5L3 6c1.3-1.3 3-2 5-2s3.7.7 5 2l-1.5 1.5C10.6 6.6 9.4 6 8 6z" fill="#60a5fa"/><circle cx="8" cy="11" r="1.5" fill="#60a5fa"/></svg>
+                  <svg viewBox="0 0 22 12" fill="none"><rect x="0" y="1" width="18" height="10" rx="3" stroke="#60a5fa" stroke-width="1.2"/><rect x="1.5" y="2.5" width="12" height="7" rx="1.5" fill="#60a5fa"/><path d="M19.5 4.5v3a1.5 1.5 0 000-3z" fill="#60a5fa" opacity=".5"/></svg>
+                </div>
+              </div>
+
+              <!-- ═══════════════════════════════════
+                   APP CAROUSEL  (3 screens, auto-cycles)
+                   ─────────────────────────────────────
+                   TO ADD YOUR IMAGES:
+                   • Banner  → replace <div class="app-banner-placeholder">
+                               with <img class="app-banner-img"
+                                         src="assets/banner.jpg" alt="">
+                   • Icons   → inside each .app-cat-icon-wrap add
+                               <img src="assets/icon-lcd.png" alt="LCD">
+                               and remove the emoji text node
+                   ═══════════════════════════════════ -->
+              <div class="phone-app-carousel" id="phoneCarousel">
+
+                <!-- ══════════════════════════════════
+                     SLIDE 1 — Home / Marketplace
+                     (matches your screenshot exactly)
+                     ══════════════════════════════════ -->
+                <div class="phone-app-slide">
+                  <div class="app-home">
+
+                    <!-- Search bar -->
+                    <div class="app-search-row">
+                      <div class="app-search-box">
+                        <span class="app-search-icon">🔍</span>
+                        <span class="app-search-placeholder">Cari kursus...</span>
+                      </div>
+                      <div class="app-search-btn">➜</div>
+                    </div>
+
+                    <!-- ─── BANNER ───────────────────────────────
+                         Drop your banner image in assets/banner.jpg
+                         then swap the placeholder div for the <img> tag below:
+
+                         <img class="app-banner-img"
+                              src="assets/banner.jpg"
+                              alt="Brader Parts – Penyedia Sparepart #1">
+                    ──────────────────────────────────────────── -->
+                    <div class="app-banner-wrap">
+                      <div class="app-banner-placeholder" id="bannerPlaceholder">
+                        <!-- Red brader-parts style card -->
+                        <div style="
+                          width:100%; height:100%;
+                          background: radial-gradient(ellipse at 60% 40%,#7f1d1d 0%,#450a0a 55%,#1c0505 100%);
+                          display:flex; flex-direction:column;
+                          align-items:center; justify-content:center;
+                          gap:5px; position:relative; overflow:hidden;
+                        ">
+                          <!-- Glow burst -->
+                          <div style="
+                            position:absolute; width:80px; height:80px;
+                            border-radius:50%; top:50%; left:55%;
+                            transform:translate(-50%,-50%);
+                            background:radial-gradient(circle,rgba(239,68,68,.35),transparent 70%);
+                            filter:blur(8px);
+                          "></div>
+                          <!-- Brand badge -->
+                          <div style="
+                            width:46px; height:46px;
+                            background:linear-gradient(145deg,#dc2626,#991b1b);
+                            border-radius:14px;
+                            border:2px solid rgba(255,255,255,.25);
+                            display:flex; align-items:center; justify-content:center;
+                            font-size:22px;
+                            box-shadow:0 6px 20px rgba(220,38,38,.5);
+                            position:relative; z-index:1;
+                          ">🔧</div>
+                          <!-- Tagline ribbon -->
+                          <div style="
+                            background:rgba(0,0,0,.55);
+                            border:1px solid rgba(255,255,255,.15);
+                            border-radius:6px;
+                            padding:3px 10px;
+                            font-size:7px; font-weight:800;
+                            color:#fff; letter-spacing:.1em;
+                            text-transform:uppercase;
+                            font-family:var(--ff-head);
+                            position:relative; z-index:1;
+                          ">★ Penyedia Sparepart #1</div>
+                        </div>
+                      </div>
+                      <!-- Banner pagination dots -->
+                      <div class="app-banner-dots">
+                        <div class="app-banner-dot active"></div>
+                        <div class="app-banner-dot"></div>
+                        <div class="app-banner-dot"></div>
+                        <div class="app-banner-dot"></div>
+                        <div class="app-banner-dot"></div>
+                      </div>
+                    </div>
+
+                    <!-- ─── KATEGORI TERPOPULER ────────────── -->
+                    <div class="app-section-row">
+                      <span class="app-section-heading">Kategori Terpopuler</span>
+                      <span class="app-section-link">Lihat Semua ›</span>
+                    </div>
+
+                    <!-- 8-tile grid — Row 1 -->
+                    <div class="app-cat-grid">
+
+                      <!-- TILE 1: LCD Replacement
+                           Image slot → assets/icon-lcd.png
+                           Replace emoji with: <img src="assets/icon-lcd.png" alt="LCD"> -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap lcd">📺</div>
+                        <span class="app-cat-label">LCD<br>Replacem.</span>
+                      </div>
+
+                      <!-- TILE 2: Charging Port
+                           Image slot → assets/icon-charging.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap charge">🔌</div>
+                        <span class="app-cat-label">Charging<br>Port</span>
+                      </div>
+
+                      <!-- TILE 3: Software Issue
+                           Image slot → assets/icon-software.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap soft">💻</div>
+                        <span class="app-cat-label">Software<br>Issue</span>
+                      </div>
+
+                      <!-- TILE 4: Audio/Speaker
+                           Image slot → assets/icon-audio.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap audio">🔊</div>
+                        <span class="app-cat-label">Audio/<br>Spea...</span>
+                      </div>
+
+                      <!-- Row 2 -->
+
+                      <!-- TILE 5: Battery Service
+                           Image slot → assets/icon-battery.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap batt">🔋</div>
+                        <span class="app-cat-label">Battery<br>Service</span>
+                      </div>
+
+                      <!-- TILE 6: Motherboard Repair
+                           Image slot → assets/icon-motherboard.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap board">🖥️</div>
+                        <span class="app-cat-label">Mother-<br>board R.</span>
+                      </div>
+
+                      <!-- TILE 7: Camera Repair
+                           Image slot → assets/icon-camera.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap cam">📷</div>
+                        <span class="app-cat-label">Camera<br>Repair</span>
+                      </div>
+
+                      <!-- TILE 8: Water Damage
+                           Image slot → assets/icon-water.png -->
+                      <div class="app-cat-item">
+                        <div class="app-cat-icon-wrap water">💧</div>
+                        <span class="app-cat-label">Water<br>Damage</span>
+                      </div>
+
+                    </div><!-- /app-cat-grid -->
+
+                  </div><!-- /app-home -->
+                </div><!-- /slide-1 -->
+
+                <!-- ══ SLIDE 2 — Course Detail ══ -->
+                <div class="phone-app-slide">
+                  <div class="app-screen-2">
+                    <div class="app-back-row">← Kembali</div>
+                    <div class="app-course-hero">
+                      <p class="app-course-badge">⚡ Modul 04</p>
+                      <p class="app-course-title">Software Flashing &amp; Unlocking</p>
+                      <div class="app-course-meta">
+                        <span class="app-meta-pill">📹 12 Pelajaran</span>
+                        <span class="app-meta-pill">⏱ 4.5 jam</span>
+                      </div>
+                    </div>
+                    <div class="app-lesson-list">
+                      <div class="app-lesson-row">
+                        <div class="app-lesson-icon done">✅</div>
+                        <div class="app-lesson-info">
+                          <p class="app-lesson-title">Intro to Firmware</p>
+                          <p class="app-lesson-sub">22 min · Video</p>
+                        </div>
+                        <span class="app-lesson-check done">✓</span>
+                      </div>
+                      <div class="app-lesson-row">
+                        <div class="app-lesson-icon done">✅</div>
+                        <div class="app-lesson-info">
+                          <p class="app-lesson-title">Flashing Tools Setup</p>
+                          <p class="app-lesson-sub">18 min · Video</p>
+                        </div>
+                        <span class="app-lesson-check done">✓</span>
+                      </div>
+                      <div class="app-lesson-row">
+                        <div class="app-lesson-icon">▶️</div>
+                        <div class="app-lesson-info">
+                          <p class="app-lesson-title">Carrier Unlock Methods</p>
+                          <p class="app-lesson-sub">31 min · Video</p>
+                        </div>
+                        <span class="app-lesson-check">›</span>
+                      </div>
+                      <div class="app-lesson-row">
+                        <div class="app-lesson-icon">🔒</div>
+                        <div class="app-lesson-info">
+                          <p class="app-lesson-title">IMEI Restoration</p>
+                          <p class="app-lesson-sub">26 min · Video</p>
+                        </div>
+                        <span class="app-lesson-check">›</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /slide-2 -->
+
+                <!-- ══ SLIDE 3 — Progress / Certificate ══ -->
+                <div class="phone-app-slide">
+                  <div class="app-screen-3">
+                    <div class="app-cert-card">
+                      <div class="app-cert-icon">🏆</div>
+                      <p class="app-cert-title">Progress Sertifikasi</p>
+                      <p class="app-cert-sub">Selesaikan 6 modul untuk mendapatkan<br>Sertifikat TechRepairPro</p>
+                    </div>
+                    <div class="app-stat-row">
+                      <div class="app-stat-card"><p class="app-stat-num">4/6</p><p class="app-stat-label">Modul Selesai</p></div>
+                      <div class="app-stat-card"><p class="app-stat-num">68%</p><p class="app-stat-label">Selesai</p></div>
+                      <div class="app-stat-card"><p class="app-stat-num">4.9★</p><p class="app-stat-label">Nilai Kuis</p></div>
+                    </div>
+                    <div class="app-achievement-row">
+                      <div class="app-achievement-item">
+                        <span class="app-achievement-badge">🔧</span>
+                        <div class="app-achievement-info">
+                          <p class="app-achievement-name">Hardware Master</p>
+                          <p class="app-achievement-desc">Modul 1 selesai dengan 100%</p>
+                        </div>
+                        <span class="app-achievement-pts">+500 pts</span>
+                      </div>
+                      <div class="app-achievement-item">
+                        <span class="app-achievement-badge">📺</span>
+                        <div class="app-achievement-info">
+                          <p class="app-achievement-name">Display Expert</p>
+                          <p class="app-achievement-desc">Modul 2 selesai</p>
+                        </div>
+                        <span class="app-achievement-pts">+400 pts</span>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- /slide-3 -->
+
+              </div><!-- /phoneCarousel -->
+
+              <!-- Slide indicator dots -->
+              <div class="phone-slide-dots">
+                <div class="phone-slide-dot active" id="pdot0"></div>
+                <div class="phone-slide-dot" id="pdot1"></div>
+                <div class="phone-slide-dot" id="pdot2"></div>
+              </div>
+
+              <!-- Bottom nav — 5 tabs matching screenshot -->
+              <div class="app-bottom-nav">
+                <div class="app-nav-item active">🏠<span>Beranda</span><div class="app-nav-dot"></div></div>
+                <div class="app-nav-item">🛒<span>Shop</span></div>
+                <div class="app-nav-item">🏷️<span>Brand</span></div>
+                <div class="app-nav-item">📚<span>Belajar</span></div>
+                <div class="app-nav-item">👤<span>Masuk</span></div>
+              </div>
+
+              <!-- iOS-style home indicator bar -->
+              <div class="phone-home-bar">
+                <div class="phone-home-indicator"></div>
+              </div>
+
+            </div><!-- /phone-screen -->
+          </div><!-- /phone-frame -->
+        </div><!-- /phone-mockup -->
+
+        <!-- Floating info chips -->
+        <div class="chip chip-1"><span>✓</span>Certified</div>
+        <div class="chip chip-2"><span>📱</span>Hardware</div>
+        <div class="chip chip-3"><span>⚡</span>Software</div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================================================
+       BENEFITS SECTION
+  ================================================ -->
+  <section id="benefits" aria-labelledby="benefits-title">
+    <div class="container">
+      <div class="benefits-header reveal">
+        <p class="section-label">Kenapa Pilih Kami</p>
+        <h2 class="section-title" id="benefits-title">
+          Semaua Yang Kamu Butuhkan Untuk <span>Sukses</span>
+        </h2>
+        <p class="benefits-sub">Dari nol pengalaman hingga mengelola bengkel reparasi sendiri.</p>
+      </div>
+
+      <div class="benefits-grid">
+
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">👨‍💼</div>
+          <h3 class="benefit-title">Instruktur Berpengalaman</h3>
+          <p class="benefit-desc">Dibimbing oleh praktisi senior yang telah berkecimpung di industri lebih dari 10 tahun.</p>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">🎓</div>
+          <h3 class="benefit-title">Sertifikasi Resmi</h3>
+          <p class="benefit-desc">Lulusan mendapatkan sertifikat kompetensi yang diakui oleh industri dan pemerintah.</p>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">🛠️</div>
+          <h3 class="benefit-title">Fasilitas Lengkap</h3>
+          <p class="benefit-desc">Peralatan praktik terkini dan lengkap untuk menunjang proses belajar mengajar.</p>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-4">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">Kurikulum Sesuai Industri</h3>
+          <p class="benefit-desc">Materi selalu diperbarui mengikuti perkembangan teknologi dan kebutuhan industri terbaru.</p>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-5">
+          <div class="benefit-icon">💼</div>
+          <h3 class="benefit-title">Penyaluran Kerja</h3>
+          <p class="benefit-desc">Bantuan penyaluran kerja ke service center terkemuka.</p>
+        </div>
+
+        <div class="benefit-card reveal reveal-delay-6">
+          <div class="benefit-icon">🌐</div>
+          <h3 class="benefit-title">Komunitas Alumni</h3>
+          <p class="benefit-desc">Jaringan alumni luas se-Indonesia untuk berbagi pengalaman dan peluang bisnis.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CURRICULUM
+  ================================================ -->
+  <section id="curriculum" aria-labelledby="curriculum-title">
+    <div class="container">
+      <div class="curriculum-header reveal">
+        <p class="section-label">Apa Yang Kamu Pelajari</p>
+        <h2 class="section-title" id="curriculum-title">
+          Complete <span>Repair</span> Curriculum
+        </h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="module reveal reveal-delay-1">
+          <div class="module-dot"></div>
+          <div class="module-body">
+            <p class="module-num">Module 01</p>
+            <h3 class="module-title">Smartphone Hardware Basics</h3>
+            <p class="module-desc">Pengenalan dasar terhadap Komponen Pasif & Komponen Aktif.</p>
+          </div>
+        </div>
+
+        <div class="module reveal reveal-delay-2">
+          <div class="module-dot"></div>
+          <div class="module-body">
+            <p class="module-num">Module 02</p>
+            <h3 class="module-title">Soldering Tips</h3>
+            <p class="module-desc">Mempelajari penggunaan solder dengan baik dan benar.</p>
+          </div>
+        </div>
+
+        <div class="module reveal reveal-delay-3">
+          <div class="module-dot"></div>
+          <div class="module-body">
+            <p class="module-num">Module 03</p>
+            <h3 class="module-title">Battery & Charging Diagnosis</h3>
+            <p class="module-desc">pengujian kapasitas, prosedur penggantian yang aman, penyolderan mikro pada port pengisian daya, dan perbaikan chip pengisian cepat.</p>
+          </div>
+        </div>
+
+        <div class="module reveal reveal-delay-4">
+          <div class="module-dot"></div>
+          <div class="module-body">
+            <p class="module-num">Module 04</p>
+            <h3 class="module-title">Software Flashing & Unlocking</h3>
+            <p class="module-desc">Pemasangan firmware, metode pembukaan kunci operator, prosedur bootloader, dan pemulihan IMEI dengan memperhatikan kepatuhan.</p>
+          </div>
+        </div>
+
+        <div class="module reveal reveal-delay-5">
+          <div class="module-dot"></div>
+          <div class="module-body">
+            <p class="module-num">Module 05</p>
+            <h3 class="module-title">Professional Repair Workflow</h3>
+            <p class="module-desc">Prosedur penerimaan barang, komunikasi dengan pelanggan, integrasi sistem POS, kebijakan garansi, dan strategi peningkatan keuntungan toko.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PRICING
+  ================================================ -->
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <p class="section-label">Simple Pricing</p>
+        <h2 class="section-title" id="pricing-title">Hanya Sekali Pembelian <span>Akses Seumur Hidup</span></h2>
+      </div>
+
+      <div class="pricing-grid pricing-single">
+
+        <div class="price-card featured reveal reveal-delay-1">
+          <span class="featured-badge">Akses Seumur Hidup</span>
+          <p class="price-plan">Kelas Offline - Android</p>
+          <div class="price-amount">
+            <span class="price-currency" style="color:#8896b3;">Rp.</span>
+            <span class="price-num">4.000.000</span>
+            <span class="price-period" style="color:#8896b3;">/Sampai Bisa</span>
+          </div>
+          <p class="price-desc" style="color:var(--clr-muted);border-color:var(--clr-border);">Semua yang Anda butuhkan untuk menjadi teknisi perbaikan ponsel pintar bersertifikat — cukup sekali bayar, seumur hidup.</p>
+          <ul class="price-features">
+            <li class="price-feature"><span class="check">✓</span> GRATIS Borneo Schematic 1 bulan</li>
+            <li class="price-feature"><span class="check">✓</span> GRATIS Kaos Official Quantum</li>
+            <li class="price-feature"><span class="check">✓</span> GRATIS Antar Jemput dari Bandara/Stasiun/Terminal</li>
+            <li class="price-feature"><span class="check">✓</span> GRATIS Mess (kamar AC) bagi peserta luar kota Semarang</li>
+            <li class="price-feature"><span class="check">✓</span> GRATIS Wifi 24 Jam</li>
+            <li class="price-feature"><span class="check">✓</span> GRATIS Mengulang di Kelas Berikutnya</li>
+            <li class="price-feature"><span class="check">✓</span> Boleh Membawa Bahan Bedah Kasus Sendiri</li>
+            <li class="price-feature"><span class="check">✓</span> Sertifikat Training Resmi</li>
+          </ul>
+          <div class="price-btn-wrap"><a href="#" class="btn btn-primary btn-pulse">Daftar</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TESTIMONIALS
+  ================================================ -->
+  <section id="testimonials" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <p class="section-label">Cerita Peserta</p>
+        <h2 class="section-title" id="testimonials-title">Usaha keras menghasilkan, <span>Hasil Nyata</span></h2>
+      </div>
+
+      <div class="testimonial-track" id="testimonialTrack" aria-live="polite">
+
+        <div class="testimonial-slide active" role="group" aria-label="Testimonial 1 of 5">
+          <div class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">"Dalam waktu kurang dari 8 bulan, saya berhasil beralih dari memperbaiki layar ponsel teman-teman yang retak menjadi mengelola bengkel perbaikan sendiri. Kurikulumnya sangat lengkap dan komunitasnya sungguh tak ternilai harganya."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MR</div>
+              <div>
+                <p class="author-name">Akbar Rozaqul Ahmad</p>
+                <p class="author-role">Alumni, Atlanta GA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide" role="group" aria-label="Testimonial 2 of 5">
+          <div class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">"TModul perangkat lunak itu sendiri sudah cukup untuk menutupi biaya seluruh kursus pada hari pertama. Keterampilan membuka kunci dan flashing sangat diminati, dan tidak ada yang lain yang mengajarkannya dengan sejelas ini."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">ST</div>
+              <div>
+                <p class="author-name">Sophia T.</p>
+                <p class="author-role">Freelance Technician, Miami FL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide" role="group" aria-label="Testimonial 3 of 5">
+          <div class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">"Awalnya saya ragu untuk belajar secara daring, tetapi kualitas video dan penjelasan langkah demi langkahnya membuat semuanya menjadi sangat jelas. Saya lulus ujian sertifikasi pada percobaan pertama."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JL</div>
+              <div>
+                <p class="author-name">James L.</p>
+                <p class="author-role">Certified Technician, Chicago IL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide" role="group" aria-label="Testimonial 4 of 5">
+          <div class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">"Saya diterima bekerja di uBreakiFix dua minggu setelah menyelesaikan program Pro. Pelatih saya mengatakan bahwa saya datang dengan persiapan yang lebih matang daripada kebanyakan orang yang sudah bekerja di bidang ini selama setahun."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <p class="author-name">Aisha K.</p>
+                <p class="author-role">Lead Technician, Dallas TX</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-slide" role="group" aria-label="Testimonial 5 of 5">
+          <div class="testimonial-card">
+            <p class="testimonial-stars">★★★★★</p>
+            <p class="testimonial-text">"Paket Business adalah pilihan yang sangat jelas bagi tim kios saya. Kami bertiga naik level bersama-sama, dan waktu penyelesaian perbaikan kami berkurang hingga 40% dalam waktu sebulan."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">DP</div>
+              <div>
+                <p class="author-name">Derek P.</p>
+                <p class="author-role">Kiosk Manager, Seattle WA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dots -->
+      <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation">
+        <button class="dot active" data-index="0" aria-label="Go to testimonial 1" role="tab" aria-selected="true"></button>
+        <button class="dot" data-index="1" aria-label="Go to testimonial 2" role="tab" aria-selected="false"></button>
+        <button class="dot" data-index="2" aria-label="Go to testimonial 3" role="tab" aria-selected="false"></button>
+        <button class="dot" data-index="3" aria-label="Go to testimonial 4" role="tab" aria-selected="false"></button>
+        <button class="dot" data-index="4" aria-label="Go to testimonial 5" role="tab" aria-selected="false"></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================
+       INSTRUCTORS
+  ================================================ -->
+  <section id="instructors" aria-labelledby="instructors-title">
+    <div class="container">
+
+      <div class="instructors-header reveal">
+        <p class="section-label">Temui Para Ahli</p>
+        <h2 class="section-title" id="instructors-title">Belajar dari Para Ahli <span>Dalam Bidang ini</span></h2>
+        <p class="instructors-sub">Para instruktur kami telah memperbaiki lebih dari 50.000 perangkat secara keseluruhan — dan kini mereka membagikan setiap teknik, trik, dan rahasia profesi kepada Anda.</p>
+      </div>
+
+      <div class="instructors-grid">
+
+        <div class="instructor-card reveal reveal-delay-1">
+          <div class="instructor-photo-wrap">
+            <div class="instructor-photo">
+              <img src="assets/instruktur1.png" >
+            </div>
+          </div>
+          <p class="instructor-name">Tomi Sudiarno</p>
+          <p class="instructor-title">Kepala Instruktur</p>
+          <p class="instructor-bio">15+ Tahun pengalaman dalam bidang reparasi Handphone</p>
+          <div class="instructor-socials">
+            <a href="https://id.linkedin.com/in/tomie-sudiarno-02658b199" class="instructor-social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="instructor-social-link" aria-label="Facebook">f</a>
+          </div>
+        </div>
+
+        <div class="instructor-card reveal reveal-delay-2">
+          <div class="instructor-photo-wrap">
+            <div class="instructor-photo">
+              <img src="assets/instruktur2.png" >
+            </div>
+          </div>
+          <p class="instructor-name">Yossi Wahyu </p>
+          <p class="instructor-title">Hardware Instruktur</p>
+          <p class="instructor-bio">Ahli dalam Mnediagnosis kerusakan pada hardhar handphone</p>
+          
+        </div>
+
+        <div class="instructor-card reveal reveal-delay-3">
+          <div class="instructor-photo-wrap">
+            <div class="instructor-photo">
+             <img src="assets/instruktur3.png" >
+            </div>
+          </div>
+          <p class="instructor-name">Nandieni Hisma</p>
+          <p class="instructor-title">Software Instruktur</p>
+          <p class="instructor-bio">Ahli dalam firmware iOS & Android, pembukaan kunci, dan pemulihan data. Telah merancang kurikulum perangkat lunak dari awal.</p>
+          
+        </div>
+
+      </div>
+
+      <div class="instructors-divider" aria-hidden="true"></div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       CTA
+  ================================================ -->
+  <section id="cta" aria-labelledby="cta-title">
+    <div class="cta-glow-border" aria-hidden="true"></div>
+    <div class="cta-content reveal">
+      <p class="section-label" style="justify-content:center;display:flex;">Daftar Sekarang</p>
+      <h2 class="cta-title" id="cta-title">
+        Mulailah Karier Anda<br><span>Sebagai Teknisi Sekarang Juga</span>
+      </h2>
+      <p class="cta-sub">Bergabunglah dengan lebih dari 3.000 lulusan yang telah mengubah keterampilan mereka menjadi karier. Akses seumur hidup. Jaminan bebas risiko selama 30 hari.</p>
+      <a href="#pricing" class="btn btn-primary btn-pulse" style="font-size:1.05rem;padding:1rem 2.8rem;">
+        Daftar Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-top reveal">
+
+        <div class="footer-brand">
+          <span class="brand">
+            <img src="assets/logo.svg" alt="TechRepairPro" class="brand-full-logo">
+          </span>
+          <p>Program sertifikasi daring terlengkap untuk para profesional perbaikan ponsel pintar.</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Course</p>
+          <ul>
+            <li><a href="#curriculum">Kurikulum</a></li>
+            <li><a href="#benefits">Benefit</a></li>
+            <li><a href="#pricing">Harga</a></li>
+            <li><a href="#">Free Preview</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom reveal">
+        <p class="footer-copy">© 2026 Vbat Ponsel. All rights reserved.</p>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.youtube.com/@quantumtelecom41" class="social-link" aria-label="YouTube">▶</a>
+          <a href="https://www.instagram.com/quantum.telecommunication/" class="social-link" aria-label="Instagram">◎</a>
+          <a href="https://id.linkedin.com/company/lpk-quantum-telecommunication" class="social-link" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================
+       JAVASCRIPT
+  ================================================ -->
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
